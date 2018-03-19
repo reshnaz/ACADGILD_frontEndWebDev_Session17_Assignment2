@@ -1,21 +1,9 @@
-<!-- Navigation bar that contains 2 links, one for entering data
-     and one for displaying/viewing data -->
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li>
-          <a routerLink="/addPerson" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Add a Person
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li>
-          <a routerLink="/personList" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Person List</a>
-        </li>
-      </ul>
+<div style="text-align:center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-xs-offset-3">
+        <app-my-component></app-my-component>
+      </div>
     </div>
   </div>
-</nav>
-
-<!-- Router Outlet -->
-<router-outlet></router-outlet>
+</div>
